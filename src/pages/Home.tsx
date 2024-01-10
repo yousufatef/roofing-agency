@@ -1,6 +1,11 @@
+import PageHeader from "../components/PageHeader"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <PageHeader pageName={"Home"}/>
+      <h5>Home</h5>
+    </div>
   )
 }
 

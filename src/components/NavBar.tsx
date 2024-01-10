@@ -10,11 +10,11 @@ const NavBar = () => {
     list.style.display = "flex"
   };
   return (
-    <div className="bg-[url('../src/assets/headerBg.png')] bg-cover bg-center">
+    <div className="bg-[url('../src/assets/headerBg.png')] bg-contain bg-center p-4">
       {/* create above navBar that contain number and address and social-links*/}
       <div
         id="above-nav"
-        className="grid grid-cols-3 justify-around text-center py-3 text-white opacity-[0.9] max-md:hidden border-b-[1px] border-borderColor"
+        className="grid grid-cols-3 justify-around text-center py-3 text-white opacity-[0.9] max-md:hidden border-b-[1px] border-borderColor max-md:border-0"
       >
         <div>
           <p>+201115737646</p>
@@ -48,7 +48,7 @@ const NavBar = () => {
       {/* create navBar that contain Logo and links and btn */}
       <div
         id="nav"
-        className="grid grid-cols-3 justify-around text-center py-4"
+        className="grid grid-cols-3 justify-around text-center py-4 "
       
       >
         <div className="flex justify-center max-md:mb-6">
@@ -59,7 +59,7 @@ const NavBar = () => {
 
         <ul
           id="list"
-          className="flex justify-center max-md:bg-[url('../src/assets/headerBg.png')] text-white max-md:flex max-md:flex-col max-md:mb-5 max-md:absolute max-md:item-center max-md:bg-white max-md:w-full max-md:left-0 max-md:top-0 max-md:py-5 max-md:hidden"
+          className="flex justify-center max-md:bg-[url('../src/assets/headerBg.png')] bg-contain text-white max-md:flex max-md:flex-col max-md:mb-5 max-md:absolute max-md:item-center max-md:bg-white max-md:w-full max-md:left-0 max-md:top-0 max-md:py-5 max-md:hidden"
         >
           <li className="max-md:mb-2 max-md:font-medium max-md:text-lg">
             <a href="/" className="px-2">
