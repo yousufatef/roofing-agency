@@ -3,10 +3,10 @@ import { useLocation } from "react-router-dom";
 import { FC } from "react"
 
 
-interface ContactUs {}
+interface NavBar {}
 
 
-const NavBar:FC<ContactUs> = () => {
+const NavBar:FC<NavBar> = () => {
   const [links] = useState(["About", "Services", "Projects", "Contact"]);
   const [isOpen, setIsOpen] = useState(false);
 
