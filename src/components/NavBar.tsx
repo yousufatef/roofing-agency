@@ -1,8 +1,19 @@
 import { useState } from "react";
- 
-const NavBar = () => {
+import { useLocation } from "react-router-dom";
+import { FC } from "react"
+
+
+interface ContactUs {}
+
+
+const NavBar:FC<ContactUs> = () => {
   const [links] = useState(["About", "Services", "Projects", "Contact"]);
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation()
+  const currentUrl = location.pathname
+  console.log(location, "location")
+  console.log(currentUrl, "currentUrl")
 
   const toggleNavBar = () => {
     setIsOpen(!isOpen);
@@ -98,7 +109,7 @@ const NavBar = () => {
         </span>
       </div>
       {/* heading */}
-      <h1 id="header"  className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24"></h1>
+      <h1 id="header"  className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24">{currentUrl.replace("/", " ")}</h1>
     </div>
   );
 };
