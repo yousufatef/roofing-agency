@@ -8,7 +8,8 @@ export default {
     extend: {
       colors:{
         borderColor: "rgba(255,255,255,0.12)",
-        mainColor: "#cb4154"
+        mainColor: "#cb4154",
+        globalColor: "#131d3b"
       }
     },
   },
