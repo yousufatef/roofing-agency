@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        borderColor: "rgba(255,255,255,0.12)"
+        borderColor: "rgba(255,255,255,0.12)",
+        mainColor: "#cb4154"
       }
     },
   },
