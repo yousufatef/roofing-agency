@@ -1,10 +1,7 @@
-import PageHeader from "../components/PageHeader"
 import ServiceRequest from "../components/ServiceRequest"
-
 const Home = () => {
   return (
     <div>
-      <PageHeader pageName={"Home"}/>
       <ServiceRequest/>
       <div className="flex mb-[100px] mt-[90px] max-sm:flex-col">
         <div className="p-[27px] relative max-lg:flex max-lg:w-[90%] max-lg:flex-col">

@@ -97,6 +97,8 @@ const NavBar = () => {
           {isOpen ? "" : <i className="fa-solid fa-bars"></i>}
         </span>
       </div>
+      {/* heading */}
+      <h1 id="header"  className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24"></h1>
     </div>
   );
 };
