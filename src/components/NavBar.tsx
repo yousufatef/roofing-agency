@@ -41,7 +41,7 @@ const NavBar = () => {
                   </a>
                </li>
             ))}
-         </ul> : <ul id="list" className="md:hidden block bg-red-900 text-white absolute left-0 top-0 w-[100%] h-[270px] overflow-hidden">
+         </ul> : <ul id="list" className="md:hidden block bg-primary text-white absolute left-0 top-0 w-[100%] h-[270px] overflow-hidden">
              <a href="/" className="absolute top-[30px] left-[15px] ">
             <img src="/src/assets/house-logo1-80x34.png" alt="Logo-img" className="pt-[1.5rem]"/>
              </a>
@@ -69,7 +69,7 @@ const NavBar = () => {
          <span
             className="text-white text-[35px] absolute right-6 cursor-pointer md:hidden"
             onClick={toggleNavBar}>
-            {isOpen ? <i className="fa-regular fa-circle-xmark"></i> : <i className="fa-solid fa-bars"></i>}
+            {isOpen ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}
          </span>
       </nav>
       <h1

@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#9F1916",
-        secondary: "#09483F",
-        lightgray: "#F7F8FA",
-        purb:"#AC7AB5"
+        "primary": "#b43041",
+        "secondary": "#131d3b",
+        "third": "#171717",
+        "fourth": "#fafafa",
       },
       fontFamily: {
         somar: [ 'Somar Sans', 'sans-serif' ],

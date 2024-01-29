@@ -5,8 +5,15 @@ import Services from "./pages/Services"
 import Projects from "./pages/Projects"
 import ContactUs from "./pages/ContactUs"
 import NavBar from "./components/NavBar"
+import { useEffect } from "react"
+import Footer from "./components/Footer"
 
 const App = () => {
+
+  useEffect(() => {
+    if (location.pathname === "/") document.title = `home-roofing agency`
+    else document.title = `${location.pathname.replace("/"," ")}-roofing agency`
+  },[])
   return (
     <>
       <BrowserRouter>
@@ -17,7 +24,8 @@ const App = () => {
           <Route path="/services" element={<Services/>}/>
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
-          </Routes>
+        </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )
