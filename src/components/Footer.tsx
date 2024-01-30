@@ -45,7 +45,7 @@ const Footer = () => {
 
       </div>
       <div className="flex justify-between text-white pt-8">
-        <p>Copyright © 2024 Youssef Atef</p>
+        <p>{`Copyright © ${new Date().getFullYear()} Youssef Atef`}</p>
         <p>Powered By Youssef Atef</p>
       </div>
     </div>

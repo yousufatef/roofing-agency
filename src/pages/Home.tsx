@@ -168,12 +168,9 @@ const Home = () => {
 
       </div>
       {/* Get A Solutions Section */}
-      <div className="relative text-center"> 
-        <div className="bg-[url('/src/assets/quotes-min.jpg')] filter grayscale-[0.3] blur-[1px] bg-cover bg-center text-center h-[300px]"></div>
-        <div className="absolute top-[40%] left-[30%]">
-          <h3 className="text-primary font-bold text-3xl">Don't Know What To Start With?</h3>
-          <h4>Get A Solutions For All Roofing Services</h4></div>
-      </div>
+      <div className="bg-[url('/src/assets/quotes-min.jpg')] bg-cover bg-center text-center h-[200px] flex flex-col justify-center items-center"> 
+          <h3 className="text-white font-bold text-1xl md:text-2xl">Don't Know What To Start With?</h3>
+          <h4 className="text-white font-bold text-3xl md:text-4xl">Get A Solutions For All Roofing Services</h4></div>
     </div>
   )
 }
