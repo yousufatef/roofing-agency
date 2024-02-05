@@ -2,10 +2,10 @@ import { useState } from "react"
 const NavBar = () => {
    const [links] = useState([
       { name: "Home", url: "/" },
-      { name: "About", url: "/about" },
-      { name: "Services", url: "/services" },
-      { name: "Projects", url: "/projects" },
-      { name: "Contact", url: "/contact" },
+      { name: "About", url: "about" },
+      { name: "Services", url: "services" },
+      { name: "Projects", url: "projects" },
+      { name: "Contact", url: "contact" },
    ])
    const [isOpen, setIsOpen] = useState(false)
    const toggleNavBar = () => {
@@ -41,8 +41,8 @@ const NavBar = () => {
                   </a>
                </li>
             ))}
-         </ul> : <ul id="list" className="md:hidden block bg-primary text-white absolute left-0 top-0 w-[100%] h-[270px] overflow-hidden">
-             <a href="/" className="absolute top-[30px] left-[15px] ">
+         </ul> : <ul id="list" className="md:hidden block bg-[#4F1A2F] text-white absolute left-0 top-0 w-[100%] h-[270px] overflow-hidden">
+             <a href="/" className="absolute top-[30px] left-[15px] mt-[10px]">
             <img src="/src/assets/house-logo1-80x34.png" alt="Logo-img" className="pt-[1.5rem]"/>
              </a>
             <div className="pt-[30px]">
