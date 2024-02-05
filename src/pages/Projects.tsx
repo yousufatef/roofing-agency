@@ -18,7 +18,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] p-[25px]">
         {projects.map(project => (
           <div key={project.title} className="p-[30px]  bg-white flex gap-4 flex-col justify-center text-center rounded shadow-md">
-            <img src={`/src/assets/${project.image}`} alt="project-image" />
+            <img src={`/assets/${project.image}`} alt="project-image" />
             <h4 className="font-bold text-secondary text-2xl">{project.title}</h4>
             <p className="text-xl">{project.description}</p>
           </div>

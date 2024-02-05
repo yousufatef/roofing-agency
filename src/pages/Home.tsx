@@ -36,8 +36,8 @@ const Home = () => {
       {/* About Company */}
       <div className="py-4 flex text-center justify-center items-center flex-col md:grid md:grid-cols-2">
         <div className="relative">
-            <img src="/src/assets/photo-hero-15.jpg" alt="services-img" className="max-w-full p-5 hover:translate-y-1.5 duration-300 ease-in"/>
-            <img src="/src/assets/photo-54.jpeg" alt="services-img" className="absolute w-[50%] bottom-[-30px] right-[11px] hover:translate-y-1.5 duration-300 ease-in "/>
+            <img src="/assets/photo-hero-15.jpg" alt="services-img" className="max-w-full p-5 hover:translate-y-1.5 duration-300 ease-in"/>
+            <img src="/assets/photo-54.jpeg" alt="services-img" className="absolute w-[50%] bottom-[-30px] right-[11px] hover:translate-y-1.5 duration-300 ease-in "/>
         </div>
         <div className=" px-[25px] py-[80px]">
           <p className="font-bold text-lg text-primary">About Company</p>
@@ -80,7 +80,7 @@ const Home = () => {
          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] pt-[50px]">
           {serviceBox.map(box => (
             <div key={box.title}>
-              <img src={`/src/assets/${box.image}`} alt="service-image" className="p-3"/>
+              <img src={`/assets/${box.image}`} alt="service-image" className="p-3"/>
               <div className="p-4">
                 <h2 className="font-bold text-xl">{box.title}</h2>
                 <p>{box.paragraph}</p>
@@ -107,7 +107,7 @@ const Home = () => {
               <button className="bg-primary text-white p-2  rounded hover:opacity-[0.9]">Know More</button>
             </div>
           </div>
-          <img src="/src/assets/services-11.jpg" alt="services-image" className="m-auto"/>
+          <img src="/assets/services-11.jpg" alt="services-image" className="m-auto"/>
         </div>
       </div>
         {/* six Reason Section */}
@@ -133,12 +133,12 @@ const Home = () => {
           <p>OVER 540 “5 STARS” REVIEWS AND CLIMBING</p>
         </div>
         <div className="flex items-center justify-center flex-col">
-          <img src="/src/assets/yelp.png" alt="yelp-image" className="w-[100px] h-[100px]"/>
+          <img src="/assets/yelp.png" alt="yelp-image" className="w-[100px] h-[100px]"/>
           <h4 className="text-secondary font-bold text-[18px]">Rate Us on Yelp</h4>
           <p>248 reviews</p>
         </div>
         <div className="flex items-center justify-center flex-col">
-          <img src="/src/assets/logo-google.png" alt="yelp-image" className="w-[100px] h-[100px]"/>
+          <img src="/assets/logo-google.png" alt="yelp-image" className="w-[100px] h-[100px]"/>
           <h4 className="text-secondary font-bold text-[18px]">Rate Us on Yelp</h4>
           <p>248 reviews</p>
         </div>
@@ -153,7 +153,7 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {employees.map(employee => (
                 <div className="rounded shadow-md p-5 m-4 bg-white flex flex-col justify-center items-center text-center">
-                  <img src={`/src/assets/${employee.image}`} alt="profile-image" className="w-[100px] h-[100px] rounded-[50%] my-3"/>
+                  <img src={`/assets/${employee.image}`} alt="profile-image" className="w-[100px] h-[100px] rounded-[50%] my-3"/>
                   <div>
                     <i className="fa-solid fa-star text-primary"></i>
                     <i className="fa-solid fa-star text-primary"></i>

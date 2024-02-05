@@ -19,7 +19,7 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] p-[25px]">
           {serviceBox.map(box => (
             <div key={box.title} className="p-[30px]  bg-white flex gap-4 flex-col justify-center  rounded shadow-md">
-              <img src={`/src/assets/${box.image}`} alt="service-image" />
+              <img src={`/assets/${box.image}`} alt="service-image" />
               <h2 className="text-secondary font-bold text-2xl">{box.title}</h2>
               <p className="text-[18px] tracking-[0.8] leading-7">{box.paragraph}</p>
             </div>

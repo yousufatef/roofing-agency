@@ -5,7 +5,7 @@ const ContactUs = () => {
     <div>
       {/* Get In Touch Section*/}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-5 py-14">
-        <img src="/src/assets/contact-us-1.jpg" alt="contact-us-image" className="max-h-[450px] max-md:m-auto"/>
+        <img src="/assets/contact-us-1.jpg" alt="contact-us-image" className="max-h-[450px] max-md:m-auto"/>
         <div className="flex flex-col gap-3 text-center">
           <div className="flex flex-col justify-center items-center py-3">
             <h4 className="text-primary font-bold text-2xl">Get In Touch</h4>

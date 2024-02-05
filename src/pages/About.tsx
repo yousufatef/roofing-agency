@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <div>
-      <img src="/src/assets/about-us-1.jpg" alt="about-us-image" className="rounded-none w-[100%]" />
+      <img src="/assets/about-us-1.jpg" alt="about-us-image" className="rounded-none w-[100%]" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[25px] p-5 py-8">
         <div className="flex flex-col gap-1 p-5 text-center md:text-left">
           <h3 className="text-primary font-bold text-2xl">About Company</h3>
@@ -28,7 +28,7 @@ const About = () => {
           </p>
           <div >
             <div className="flex gap-4 py-5 justify-center md:justify-start text-center items-center">
-            <img src="/src/assets/founder.jpg" alt="founder-image" className="w-[80px] h-[80px] rounded-full" />
+            <img src="/assets/founder.jpg" alt="founder-image" className="w-[80px] h-[80px] rounded-full" />
             <div className="text-center">
               <h4 className="pb-1 text-secondary font-bold text-xl">Max Stewart</h4>
               <p className="tracking-[0.9] leading-8 text-xl font-normal ">Founder</p>
@@ -47,8 +47,8 @@ const About = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[15px] m-auto">
           <div className="flex flex-col sm:flex-row p-4 gap-4 m-auto">
-            <img src="/src/assets/about-us-11.jpg" alt="about-us-image" className="max-w-[280px] max-h-[280px]"/>
-            <img src="/src/assets/about-us-12.jpg" alt="about-us-image" className="max-w-[280px] max-h-[280px]"/>
+            <img src="/assets/about-us-11.jpg" alt="about-us-image" className="max-w-[280px] max-h-[280px]"/>
+            <img src="/assets/about-us-12.jpg" alt="about-us-image" className="max-w-[280px] max-h-[280px]"/>
           </div>
           <div className="text-white py-[25px] pl-[100px] pr-[100px] lg:text-left">
             <p className="text-primary text-xl font-bold pb-5">1993 - 2017</p>
@@ -83,10 +83,10 @@ const About = () => {
           <h3 className="font-bold text-5xl">Our Partners</h3>
         </div>
       <div className="flex flex-col items-center justify-center lg:flex-row gap-3">
-          <img src="/src/assets/logo-1.png" alt="logo-image" className="w-[250px]"/>
-          <img src="/src/assets/logo-2.png" alt="logo-image" className="w-[250px]" />
-          <img src="/src/assets/logo-17.png" alt="logo-image" className="w-[250px]" />
-          <img src="/src/assets/logo-4.png" alt="logo-image" className="w-[250px]" />
+          <img src="/assets/logo-1.png" alt="logo-image" className="w-[250px]"/>
+          <img src="/assets/logo-2.png" alt="logo-image" className="w-[250px]" />
+          <img src="/assets/logo-17.png" alt="logo-image" className="w-[250px]" />
+          <img src="/assets/logo-4.png" alt="logo-image" className="w-[250px]" />
         </div>
       </div>
     </div>
