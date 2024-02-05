@@ -1,5 +1,7 @@
 import { useState } from "react"
 import ServiceRequest from "../components/ServiceRequest"
+import ContactF from "../components/ContactForm"
+
 
 const Home = () => {
   const [statisticsBox] = useState([
@@ -170,7 +172,30 @@ const Home = () => {
       {/* Get A Solutions Section */}
       <div className="bg-[url('/src/assets/quotes-min.jpg')] bg-cover bg-center text-center h-[200px] flex flex-col justify-center items-center"> 
           <h3 className="text-white font-bold text-1xl md:text-2xl">Don't Know What To Start With?</h3>
-          <h4 className="text-white font-bold text-3xl md:text-4xl">Get A Solutions For All Roofing Services</h4></div>
+        <h4 className="text-white font-bold text-3xl md:text-4xl">Get A Solutions For All Roofing Services</h4>
+      </div>
+      {/* Head Office Section*/}
+      <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5">
+          <div className="flex flex-col text-center md:text-left gap-5 p-5">
+            <div className="flex flex-col gap-1">
+              <h2 className="text-primary font-bold text-2xl">Offices</h2>
+              <h4 className="text-secondary font-bold text-3xl">Head Office</h4>
+              <p>Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <p>24th St. Ave. San Francisco, California</p>
+              <p>Phone: +1 2345 678</p>
+              <p>Email: office@example.com</p>
+            </div>
+          </div>
+          <div className="py-5 text-center">
+            <h3 className="text-primary font-bold text-2xl">Free Consultation</h3>
+            <h2 className="text-secondary font-bold text-4xl">Get A Free Quote</h2>
+            <ContactF/>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
