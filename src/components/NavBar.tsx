@@ -2,10 +2,10 @@ import { useState } from "react"
 const NavBar = () => {
    const [links] = useState([
       { name: "Home", url: "/" },
-      { name: "About", url: "about" },
-      { name: "Services", url: "services" },
-      { name: "Projects", url: "projects" },
-      { name: "Contact", url: "contact" },
+      { name: "About", url: "/about" },
+      { name: "Services", url: "/services" },
+      { name: "Projects", url: "/projects" },
+      { name: "Contact", url: "/contact" },
    ])
    const [isOpen, setIsOpen] = useState(false)
    const toggleNavBar = () => {
