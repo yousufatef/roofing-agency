@@ -12,7 +12,7 @@ const NavBar = () => {
       setIsOpen(!isOpen)
    }
    return (
-      <div className="bg-[url('/src/assets/headerBg.png')] bg-contain bg-center p-[40px]">
+      <div className="bg-[url('/assets/headerBg.png')] bg-contain bg-center p-[40px]">
       <div className="  hidden md:flex justify-between text-center py-3 text-white opacity-90 ">
          <p>+201115737646</p>
          <p>6 October, Giza, Egypt</p>
