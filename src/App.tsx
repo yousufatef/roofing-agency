@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Services from "./pages/Services"
@@ -7,16 +7,17 @@ import ContactUs from "./pages/ContactUs"
 import NavBar from "./components/NavBar"
 import { useEffect } from "react"
 import Footer from "./components/Footer"
+import { navLinks } from "./const"
 
 const App = () => {
+  const location = useLocation()
 
   useEffect(() => {
-    if (location.pathname === "/") document.title = `home-roofing agency`
-    else document.title = `${location.pathname.replace("/"," ")}-roofing agency`
-  },[])
+    document.title = `${navLinks.filter((item)=> item.url == location.pathname)[0].name}-Roofing Agency`
+  }, [location])
+
   return (
     <>
-      <BrowserRouter>
          <NavBar/>
           <Routes>
           <Route path="/" element={<Home/>}/>
@@ -26,7 +27,6 @@ const App = () => {
           <Route path="/contact" element={<ContactUs/>}/>
         </Routes>
         <Footer/>
-      </BrowserRouter>
     </>
   )
 }

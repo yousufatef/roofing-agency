@@ -1,13 +1,8 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
+import { navLinks } from "../const"
 const NavBar = () => {
-   const [links] = useState([
-      { name: "Home", url: "/" },
-      { name: "About", url: "/about" },
-      { name: "Services", url: "/services" },
-      { name: "Projects", url: "/projects" },
-      { name: "Contact", url: "/contact" },
-   ])
+   const [links] = useState(navLinks)
    const [isOpen, setIsOpen] = useState(false)
    const toggleNavBar = () => {
       setIsOpen(!isOpen)
@@ -49,9 +44,9 @@ const NavBar = () => {
             <div className="pt-[30px]">
             {links.map((link) => (
                   <li key={link.name} className="text-[20px] font-bold pt-3">
-                  <a href={link.url} className="opacity-75  pt-5 hover:opacity-100 transition-all duration-200">
+                  <NavLink to={link.url} className="opacity-75  pt-5 hover:opacity-100 transition-all duration-200">
                      {link.name}
-                  </a>
+                  </NavLink>
                </li>
             ))}
             </div>
@@ -74,7 +69,7 @@ const NavBar = () => {
          </span>
       </nav>
       <h1
-         className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24">{ location.pathname.replace("/","")}</h1>
+         className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24">{location.pathname.replace("/","")}</h1>
      </div>   
    )
 }
