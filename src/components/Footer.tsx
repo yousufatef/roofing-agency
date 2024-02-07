@@ -25,7 +25,7 @@ const Footer = () => {
           <h3 className="text-primary font-bold text-2xl pb-4">Quick Links</h3>
           <div className="flex flex-col gap-2 text-white">
             {quickLinks.map(link => (
-              <span className="cursor-pointer hover:text-primary transition-all duration-200">{link}</span>
+              <span key={link} className="cursor-pointer hover:text-primary transition-all duration-200">{link}</span>
             ))}
            </div>
         </div>
@@ -33,7 +33,7 @@ const Footer = () => {
           <h3 className="text-primary font-bold text-2xl pb-4">Our Services</h3>
           <div className="flex flex-col gap-2 text-white">
             {ourService.map(service => (
-              <span className="cursor-pointer hover:text-primary transition-all duration-200">{service}</span>
+              <span key={service} className="cursor-pointer hover:text-primary transition-all duration-200">{service}</span>
             ))}
            </div>
         </div>
