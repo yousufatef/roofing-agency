@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { NavLink } from "react-router-dom"
 const NavBar = () => {
    const [links] = useState([
       { name: "Home", url: "/" },
@@ -36,9 +37,9 @@ const NavBar = () => {
          {!isOpen ? <ul id="list" className="hidden md:flex justify-center items-center gap-4 text-white">
             {links.map((link) => (
                <li key={link.name} className="font-medium  opacity-75 hover:opacity-100">
-                  <a href={link.url} className="">
+                  <NavLink to={link.url} className="">
                      {link.name}
-                  </a>
+                  </NavLink>
                </li>
             ))}
          </ul> : <ul id="list" className="md:hidden block bg-[#4F1A2F] text-white absolute left-0 top-0 w-[100%] h-[270px] overflow-hidden">
