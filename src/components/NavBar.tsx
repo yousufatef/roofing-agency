@@ -75,7 +75,7 @@ const NavBar = () => {
            </div>
          <h1 className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24">{location.pathname.replace("/","")}</h1>
            </div> :          
-           <div className="fixed w-[100%] max-h-full bg-[#4F1A2F] md:hidden bg-contain bg-center p-[40px]">
+           <div className="fixed w-[100%] z-50 max-h-full bg-[#4F1A2F] md:hidden bg-contain bg-center p-[40px]">
            <div className="flex justify-between items-center">
                <a href="/">
                   <img src="/assets/house-logo1-80x34.png" alt="Logo-img" />
