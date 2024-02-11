@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 import { navLinks } from "../const"
 // import { navLinks } from "../const"
@@ -86,7 +86,7 @@ const NavBar = () => {
    const [links] = useState(navLinks)
    const [isOpen, setIsOpen] = useState(false)
    const toggleNavBar = () => {
-      window.innerWidth > 100 ? setIsOpen(!isOpen) : ""
+      
       setIsOpen(!isOpen)
    }
   return (
@@ -139,7 +139,7 @@ const NavBar = () => {
            <h1 className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24">{location.pathname.replace("/","")}</h1>
         </nav>
         </div>
-
+               
         {/*small Screen*/ }
         {!isOpen ?
          <div className="md:hidden bg-[url('/assets/headerBg.png')] bg-contain bg-center p-[40px]"> 
@@ -155,7 +155,7 @@ const NavBar = () => {
            </div>
          <h1 className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24">{location.pathname.replace("/","")}</h1>
            </div> :          
-           <div className=" bg-[#4F1A2F] md:hidden bg-contain bg-center p-[40px]">
+           <div className="fixed w-[100%] max-h-full bg-[#4F1A2F] md:hidden bg-contain bg-center p-[40px]">
            <div className="flex justify-between items-center">
                <a href="/">
                   <img src="/assets/house-logo1-80x34.png" alt="Logo-img" />
