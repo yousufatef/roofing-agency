@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 import { navLinks } from "../const"
 
@@ -6,9 +6,13 @@ const NavBar = () => {
    const [links] = useState(navLinks)
    const [isOpen, setIsOpen] = useState(false)
    const toggleNavBar = () => {
-      
       setIsOpen(!isOpen)
    }
+   useEffect(() => {
+      window.scrollTo({
+         top: 0
+      })
+   })
   return (
      <>
         {/* Large Screen*/}
@@ -75,7 +79,7 @@ const NavBar = () => {
            </div>
          <h1 className="font-extrabold text-5xl bg-contain text-white p-7 text-center alien-center min-h-24">{location.pathname.replace("/","")}</h1>
            </div> :          
-           <div className="fixed w-[100%] z-50 max-h-full bg-[#4F1A2F] md:hidden bg-contain bg-center p-[40px]">
+           <div className="sticky top-0 w-[100%] z-50 max-h-full bg-[#4F1A2F] md:hidden bg-contain bg-center p-[40px]">
            <div className="flex justify-between items-center">
                <a href="/">
                   <img src="/assets/house-logo1-80x34.png" alt="Logo-img" />
@@ -108,9 +112,7 @@ const NavBar = () => {
                 ),
              )}
               </ul>
-           </div>
-        }
-
+           </div>}
      </>
        
   )
